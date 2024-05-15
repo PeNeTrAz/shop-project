@@ -1,9 +1,14 @@
-export const Page = () => {
-  return (
-    <div>
+import { ThemeToggle } from "@/components/theme-toggle"
+import { Button } from "@/components/ui/button"
 
-    </div>
-  )
+const Page = () => {
+    return (
+        <div>
+            <Button>Clique aqui</Button>
+
+            <ThemeToggle/>
+        </div>
+    )
 }
 
 export default Page
