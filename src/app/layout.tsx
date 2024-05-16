@@ -11,7 +11,7 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-    title: "Loja Shadcn UI"
+    title: "Loja Raze Cup"
 };
 
 export default function RootLayout({
