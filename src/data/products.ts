@@ -1,8 +1,8 @@
 import { Product } from "@/types/product";
 
 export const products: Product[] = [
-    {
-        id: 1,
+    /* {
+        id: 1, 
         category: 'vip',
         name: 'VIP Bronze',
         image: '',
@@ -35,14 +35,14 @@ export const products: Product[] = [
         name: 'VIP Rubi',
         image: '',
         price: 120
-    },
+    }, 
     {
         id: 6,
         category: 'vip',
         name: 'VIP Raze',
         image: '',
         price: 150
-    },
+    }, */
 
     {
         id: 7,
@@ -71,13 +71,6 @@ export const products: Product[] = [
         name: 'Meca GLE',
         image: 'images/cars/mecagle.png',
         price: 70
-    },
-    {
-        id: 11,
-        category: 'car',
-        name: 'Kuruma',
-        image: '',
-        price: 100
     },
 
     {
@@ -109,13 +102,13 @@ export const products: Product[] = [
         image: 'images/extras/reset.png',
         price: 5
     },
-    {
+    /* {
         id: 16,
         category: 'extra',
         name: '/shop',
         image: '',
         price: 10
-    },
+    }, */
     {
         id: 17,
         category: 'extra',
@@ -123,11 +116,11 @@ export const products: Product[] = [
         image: 'images/extras/2digit.png',
         price: 100
     },
-    {
+    /* {
         id: 18,
         category: 'extra',
         name: 'ID 100-499',
         image: '',
         price: 50
-    }
+    } */
 ];

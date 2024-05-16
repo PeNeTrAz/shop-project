@@ -3,21 +3,18 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Progress } from "@/components/ui/progress"
 import { useState } from "react"
-import { StepUser } from "./step-user"
-import { StepFinish } from "./step-finish"
-import { StepId } from "./step-id"
-
-type Steps = "user" | "id" | "finish"
+import { StepUser } from "@/components/checkout/step-user"
+import { StepFinish } from "@/components/checkout/step-finish"
+import { StepId } from "@/components/checkout/step-id"
+import { CheckoutSteps } from "@/types/checkout-steps"
 
 type Props = {
     open: boolean
     onOpenChange: (open: boolean) => void
 }
 
-
-
 export const CheckoutDialog = ({ open, onOpenChange }: Props) => {
-    const [step, setStep] = useState<Steps>('user')
+    const [step, setStep] = useState<CheckoutSteps>('user')
 
     let progressPct = 0
     switch (step) {
@@ -41,7 +38,7 @@ export const CheckoutDialog = ({ open, onOpenChange }: Props) => {
                     <DialogTitle>
                         {step === 'user' && 'Dados Pessoais'}
                         {step === 'id' && 'ID no Servidor'}
-                        {step === 'finish' && 'Envio para o WhatsApp'}
+                        {step === 'finish' && 'Envio para o Discord'}
                     </DialogTitle>
                 </DialogHeader>
 

@@ -3,7 +3,7 @@ import { create } from "zustand";
 type States = {
     name: string
     email: string
-    id: number
+    id: string
 }
 
 type Actions = {
@@ -15,7 +15,7 @@ type Actions = {
 const initialState: States = {
     name: '',
     email: '',
-    id: 0
+    id: ''
 }
 
 export const useCheckoutStore = create<States & Actions>()(set => ({
