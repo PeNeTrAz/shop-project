@@ -1,6 +1,6 @@
 # Loja Virtual
 
-Projeto em React + Typescript
+Projeto em Next + Typescript + shadcnui
 
 <br>
 
