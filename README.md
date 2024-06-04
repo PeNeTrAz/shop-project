@@ -10,5 +10,5 @@ Projeto em Next + Typescript + shadcnui
 
 ## Como rodar
 
-- `npm start`
+- `npm run dev`
 - http://localhost:3000
